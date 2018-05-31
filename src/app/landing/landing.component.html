@@ -1,0 +1,20 @@
+<div class="landing-page" fxFlex="nogrow" fxLayoutAlign="row">
+  <main fxFill fxLayout="column" fxLayoutAlign="center center">
+    <div class="intro">Hi, I'm Kyle.</div>
+    <div class="tagline">
+      <!--<typed [options]="typedOptions"></typed>-->
+      <span appTyped [options]="typedOptions"></span>
+    </div>
+
+    <div class="icons-social">
+      <!-- TODO: add a hover animation -->
+      <a target="_blank" href="https://github.com/kpfromer"><fa-icon [icon]="['fab', 'github']"></fa-icon></a>
+      <a target="_blank" href="https://stackoverflow.com/users/3448490/kyle-pfromer"><fa-icon [icon]="['fab', 'stack-overflow']"></fa-icon></a>
+      <a target="_blank" href="https://linkedin.com/in/kyle-pfromer-a313a013b"><fa-icon [icon]="['fab', 'linkedin']"></fa-icon></a>
+    </div>
+  </main>
+
+  <div [@arrowDown]="arrowDown" class="scroll-down" fxFlex fxLayout="column" fxLayoutAlign="center center">
+    <fa-icon [icon]="['fas', 'angle-down']"></fa-icon>
+  </div>
+</div>

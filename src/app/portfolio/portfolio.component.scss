@@ -1,0 +1,78 @@
+@import "../../assets/styles/theme";
+@import "../../assets/styles/shadow";
+@import "../../assets/styles/size";
+
+.container {
+  height: 100vh;
+}
+
+.content {
+  height: 100%;
+  width: calc(100% - 5.6rem);
+  margin: 0 auto;
+}
+
+@media (min-width: 1025px) {
+  .content {
+    width: calc(100% - 17.5em);
+  }
+}
+
+.header {
+  color: $main-theme-color;
+  padding: 1rem 0;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+//.list > * {
+//  margin: 1.5rem 0;
+//
+//  padding: .5em 0
+//}
+
+//padding: 0 0 .75rem;
+
+.list {
+
+  text-align: center;
+
+  > div {
+    @include z-depth-2;
+    background-color: $main-theme-color;
+    border-radius: 2px;
+
+    width: 10rem;
+
+    margin: 1rem;
+    padding: 0 0 .75rem;
+
+
+    > h3, p, fa-icon {
+      color: $second-theme-color;
+    }
+
+    > h3 {
+      font-weight: 400;
+      font-size: 1.125rem;
+      padding: 1rem 1.5rem;
+    }
+
+    > p {
+      padding: 0 .5rem .25rem;
+      font-weight: 300;
+      font-size: .8rem;
+      line-height: 1.35rem;
+    }
+
+    fa-icon {
+      font-size: 1.35rem;
+      padding: 0 .35rem;
+    }
+  }
+}
+
+a {
+  color: $main-theme-color;
+  text-decoration: none;
+}

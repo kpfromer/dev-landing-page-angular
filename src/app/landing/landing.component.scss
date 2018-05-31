@@ -1,0 +1,60 @@
+@import "../../assets/styles/theme";
+
+.landing-page {
+  height: 100vh;
+}
+
+main {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: $main-theme-color;
+
+  text-align: center;
+
+  > .intro {
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 3.75em;
+    font-weight: 600;
+  }
+
+  > .tagline {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    font-weight: 100;
+  }
+
+}
+
+.icons-social {
+  fa-icon {
+    padding: 10px;
+  }
+
+  a {
+    color: $main-theme-color;
+  }
+
+  a svg path {
+    fill: $main-theme-color;
+  }
+
+  fa-icon {
+    font-size: 3em;
+  }
+}
+
+.scroll-down {
+  margin-top: auto;
+
+  fa-icon {
+    padding: 10px;
+    color: $main-theme-color;
+  }
+
+  fa-icon {
+    font-size: 3em;
+  }
+}
